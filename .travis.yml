@@ -1,5 +1,12 @@
 language: python
 python: "3.6"
 install:
-  - pip install requests
-script: "python3 generateFiles.py"
+  - echo "Faz Nada"
+script: "python generate-files.py"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
