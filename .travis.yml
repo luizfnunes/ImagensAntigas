@@ -1,7 +1,7 @@
 language: python
 python: "3.6"
 script:
-  - python generate-files.py
+  - echo "Faz Nada"
 deploy:
   provider: pages
   skip-cleanup: true
